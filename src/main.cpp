@@ -16,6 +16,8 @@ int minimax(bool isMaximizing);
 int getBestMove();
 
 int main(void) {
+    cout << "\n" << "Welcome to CLI Tic Tac Toe !" << "\n";
+    cout << "Made by Gimerbone, source: https://github.com/Gimerbone/CLI-Tic-Tac-Toe/tree/master" << "\n";
     // Initialize Game
     printBoard();
 
@@ -26,6 +28,7 @@ int main(void) {
             break;
         }
 
+        cout << "Opponent's Turn:" << "\n";
         computerMove();
         printBoard();
         if (checkWinner() != ' ') {
@@ -46,6 +49,7 @@ int main(void) {
 }
 
 void printBoard() {
+    cout << "\n";
     cout << "     |     |     \n";
     cout << "  " << board[0] << "  |  " << board[1] << "  |  " << board[2] << "  \n";
     cout << "     |     |     \n";
@@ -57,6 +61,7 @@ void printBoard() {
     cout << "     |     |     \n";
     cout << "  " << board[6] << "  |  " << board[7] << "  |  " << board[8] << "  \n";
     cout << "     |     |     \n";
+    cout << "\n";
 }
 
 bool hasEmptySpaces() {
@@ -99,6 +104,7 @@ char checkWinner() {
 
 void playerMove() {
     int userInput;
+    cout << "Now is Your Turn" << "\n";
     cout << "Enter the position you want to play (1-9): ";
     
     while (true) {
