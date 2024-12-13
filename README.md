@@ -1,3 +1,6 @@
 # CLI Tic Tac Toe
-by Gimerbone<br>
-using C++
+- Languange: C++
+- Opponent / AI: Minimax Algorithm
+- One Round Only
+<br>
+Traditional Single Player Tic Tac Toe Game against AI
