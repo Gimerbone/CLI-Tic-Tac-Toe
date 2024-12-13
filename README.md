@@ -1,3 +1,3 @@
-#CLI Tic Tac Toe
-by Gimerbone
+# CLI Tic Tac Toe
+by Gimerbone<br>
 using C++
